@@ -11,7 +11,7 @@
 - Redux
 - Typescript
 - Formik
-# Делпой проекта по [ссылке](https://users-authorization.netlify.app)
+### Делпой проекта по [ссылке](https://users-authorization.netlify.app)
 
-# Запуск проекта 
+### Запуск проекта 
 npm run build
