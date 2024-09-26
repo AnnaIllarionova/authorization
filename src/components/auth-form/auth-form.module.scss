@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    width: 500px;
+    height: auto;
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    gap: 30px;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+    &__title {  
+        font-size: 28px;
+        color: aliceblue;
+
+        @media (max-width: 767px) {
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:30px;
+
+        &_info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        &_label {
+            font-size: 18px;
+            color: aliceblue;
+        }
+
+        &_input {
+            height: 45px;
+            border-radius: 10px;
+            border: none;
+            padding: 8px 10px;
+            font-size: 18px;
+        }
+
+        &_error {
+            color: rgb(185, 48, 48);
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &_button {
+            height: 45px;
+            border-radius: 10px;
+            border: none;
+            padding: 8px 10px;
+            font-size: 20px;
+            font-weight: 600;
+            background-color:  rgb(192, 222, 248);
+            color: cornflowerblue;
+
+            &:hover {
+                cursor: pointer;
+                background-color:  rgb(206, 228, 246);
+            }
+
+            &_disabled {
+                background-color: rgb(152, 141, 141);
+                &:hover {
+                    background-color: rgb(152, 141, 141);
+                }
+            }
+        }
+    }
+}
